@@ -46,6 +46,7 @@ export default class MovieApiService {
       headers: { 'Content-Type': 'application/json;charset=utf-8' },
       body: JSON.stringify(body),
     }).catch((err) => {
+      // eslint-disable-next-line no-console
       console.error('Возникла проблема с fetch запросом: ', err.message);
     });
   };

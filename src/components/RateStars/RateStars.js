@@ -14,7 +14,6 @@ export default class RateStars extends Component {
   };
 
   setMovieRating = (rate) => {
-    console.log(rate);
     const { guestSessionId, id } = this.props;
     this.setState({
       ratingValue: rate,
